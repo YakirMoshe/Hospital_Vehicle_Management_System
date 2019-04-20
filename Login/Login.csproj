@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{851DEE3B-7059-4E1D-9B75-C395C5E7DCA2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_CarVisitorGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_CarVisitorGUI.Designer.cs">
+      <DependentUpon>add_CarVisitorGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardForUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardForUser.Designer.cs">
+      <DependentUpon>CardForUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cars.cs" />
+    <Compile Include="ChangePassUserOrManger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassUserOrManger.Designer.cs">
+      <DependentUpon>ChangePassUserOrManger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInOrOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckInOrOut.Designer.cs">
+      <DependentUpon>CheckInOrOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChekIn_ChekOut.cs" />
+    <Compile Include="DbAccess.cs" />
+    <Compile Include="DBSQL.cs" />
+    <Compile Include="editVisitCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editVisitCar.Designer.cs">
+      <DependentUpon>editVisitCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarCard.Designer.cs">
+      <DependentUpon>CarCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginGUI.Designer.cs">
+      <DependentUpon>loginGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="historiGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="historiGUI.Designer.cs">
+      <DependentUpon>historiGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="informationCarGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informationCarGUI.Designer.cs">
+      <DependentUpon>informationCarGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="informationVisitorsGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informationVisitorsGUI.Designer.cs">
+      <DependentUpon>informationVisitorsGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainGUI.Designer.cs">
+      <DependentUpon>mainGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardGUI.Designer.cs">
+      <DependentUpon>CardGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProvisionalApproval.cs" />
+    <Compile Include="provisionalApprovalGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="provisionalApprovalGUI.Designer.cs">
+      <DependentUpon>provisionalApprovalGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportGUI.Designer.cs">
+      <DependentUpon>reportGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="systemPermGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="systemPermGUI.Designer.cs">
+      <DependentUpon>systemPermGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMenuGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMenuGUI.Designer.cs">
+      <DependentUpon>UserMenuGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs" />
+    <Compile Include="valid.cs" />
+    <Compile Include="Visitors.cs" />
+    <Compile Include="VisitorsHistory.cs" />
+    <EmbeddedResource Include="add_CarVisitorGUI.resx">
+      <DependentUpon>add_CarVisitorGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardForUser.resx">
+      <DependentUpon>CardForUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassUserOrManger.resx">
+      <DependentUpon>ChangePassUserOrManger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckInOrOut.resx">
+      <DependentUpon>CheckInOrOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editVisitCar.resx">
+      <DependentUpon>editVisitCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarCard.resx">
+      <DependentUpon>CarCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginGUI.resx">
+      <DependentUpon>loginGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="historiGUI.resx">
+      <DependentUpon>historiGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informationCarGUI.resx">
+      <DependentUpon>informationCarGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informationVisitorsGUI.resx">
+      <DependentUpon>informationVisitorsGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainGUI.resx">
+      <DependentUpon>mainGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardGUI.resx">
+      <DependentUpon>CardGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="provisionalApprovalGUI.resx">
+      <DependentUpon>provisionalApprovalGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportGUI.resx">
+      <DependentUpon>reportGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="systemPermGUI.resx">
+      <DependentUpon>systemPermGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMenuGUI.resx">
+      <DependentUpon>UserMenuGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.png" />
+    <None Include="Resources\מפתח מנהל.png" />
+    <None Include="Resources\מפתח מנהל1.jpg" />
+    <None Include="Resources\מפתח מנהל.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search car.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
